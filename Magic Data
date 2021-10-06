@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    int sum;
+    
+    cout << "Enter a number between 1 and 25." << endl;
+    cin >> number;
+    if (number < 1 or number > 25){
+        cout << "Not a valid input, please try again." << endl;
+        cin >> number;
+    }
+    
+    // sum of numbers from 1 to user's input
+    sum = 0;
+    for (int i=1; i <= number; i++) {
+        sum += i;
+    }
+    cout << "The sum of all values from 1 through " << number << " is: " << sum << endl;
+    return 0;
+}
