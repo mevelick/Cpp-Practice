@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int month;
+    int day;
+    int year;
+    int answer;
+    
+    cout << "Enter a date in the following format: MM/DD/YY" << endl;
+    cout << "Enter two digits for the month." << endl;
+    cin >> month;
+    cout << "Enter two digits for the day." << endl;
+    cin >> day;
+    cout << "Enter two digits for the year." << endl;
+    cin >> year;
+    
+    answer = month*day;
+    
+    if (answer == year) {
+        cout << "You entered a magic date! The month multiplied by the day of your date equals the year!" << endl;
+    }
+    else {
+        cout << "Your date is not magical. Sorry." << endl;
+    }
+    
+    return 0;
+}
