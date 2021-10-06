@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string place;
+    string animal;
+    string noun;
+    string adjective;
+    string verb;
+    
+    cout << "We are going to play a game of Mad Libs. I am going to ask you to type some words. Then, I will present the completed Mad Lib." << endl;
+    cout << "Type the name of a place" << endl;
+    cin >> place;
+    cout << "Type a type of animal" << endl;
+    cin >> animal;
+    cout << "Type a noun" << endl;
+    cin >> noun;
+    cout << "Type an adjective" << endl;
+    cin >> adjective;
+    cout << "Type a verb in the past-tense" << endl;
+    cin >> verb;
+    
+    cout << "Yesterday I went to the " << place << " with my " << animal << ". We saw a " << noun << ". It was very " << adjective << ". I had a lot of fun and " << verb << " all the way home." << endl;
+    
+    return 0;
+}
