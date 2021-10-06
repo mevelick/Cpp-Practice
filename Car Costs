@@ -1,0 +1,38 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double loan;
+    double insurance;
+    double gas;
+    double oil;
+    double tires;
+    double upkeep;
+    
+    double monthlyTotal;
+    double annualCost;
+    
+    cout << "Please enter the following information regarding your car's costs:" << endl;
+    cout << "Monthly price of loan:" << endl;
+    cin >> loan;
+    cout << "Monthly price of insurance:" << endl;
+    cin >> insurance;
+    cout << "Monthly price of gas:" << endl;
+    cin >> gas;
+    cout << "Monthly price of oil:" << endl;
+    cin >> oil;
+    cout << "Monthly price of tires (or average by how often purchased):" << endl;
+    cin >> tires;
+    cout << "Monthly price of any maintenance:" << endl;
+    cin >> upkeep;
+    
+    monthlyTotal = loan + insurance + gas + oil + tires + upkeep;
+    annualCost = monthlyTotal*12;
+    
+    cout << setprecision(2)<<fixed<<endl;
+    cout << "The monthly total cost of owning your car is: $" << monthlyTotal << endl;
+    cout << "The cost of owning your car over a year is: $" << annualCost << endl;
+    
+    return 0;
+}
