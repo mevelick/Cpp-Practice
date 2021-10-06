@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double a, b, c, d, e;
+    
+    cout << "Enter 5 test scores one at a time." << endl;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    cin >> d;
+    cin >> e;
+    
+    double sum = a + b + c + d + e;
+    double average = sum/5;
+    
+    cout << "The average of the 5 test scores provided is: " << setprecision(1) << fixed << average << endl;
+    
+    return 0;
+}
