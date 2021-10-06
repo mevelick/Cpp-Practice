@@ -1,0 +1,15 @@
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string name = "Marni";
+    string address = "8149 Bloomsbury Circle, Northville, MI 48167";
+    string phone = "248-514-3598";
+    string major = "Computer Information Systems";
+    
+    cout << "My name is: " << name << endl << "My address is: " << address << endl << "My phone number is: " << phone << endl << "My college major is: " << major << endl;
+    
+    return 0;
+}
