@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+double TAX = 0.07;
+
+int main(){
+    double a = 15.95;
+    double b = 24.95;
+    double c = 6.95;
+    double d = 12.95;
+    double e = 3.95;
+    double subtotal = a + b + c + d + e;
+    double totalTax = subtotal*TAX;
+    double total = totalTax + subtotal;
+   
+    cout << "The prices of the items purchased are: " << a << endl << b << endl << c << endl << d << endl << e << endl;
+    
+    cout << "The subtotal, pre-tax is: " << subtotal << endl;
+    cout << "The total tax on the purchase is: " << totalTax << endl;
+    cout << "Total purchase cost = " << total << endl;
+    
+return 0;
+}
